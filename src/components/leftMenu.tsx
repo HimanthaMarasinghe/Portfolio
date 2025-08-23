@@ -15,7 +15,7 @@ export default function LeftMenu() {
   return (
     <>
       {/* Desktop (Left Sidebar) */}
-      <div className="hidden md:flex flex-col justify-between my-20 w-40">
+      <div className="hidden md:flex flex-col justify-between my-20 w-60">
         <div>
           <h1 className="font-bold text-2xl">HIMANTHA</h1>
         </div>
