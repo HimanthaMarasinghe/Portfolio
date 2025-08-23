@@ -54,7 +54,7 @@ const Project = () => {
                     </div>
                     <div className="h-1/2 p-2 pt-1 text-[#ee7ffa] flex flex-col justify-start">
                         <div className="flex flex-col justify-between mb-2">
-                            <h2 className="text-2xl font-bold tracking-wider neon-text">
+                            <h2 className="text-2xl font-bold tracking-wider neon-text" style={{ fontFamily: 'var(--font-geist-sans)' }}>
                                 Cinema Hall Ticket Booking System
                             </h2>
                             <h5 className="text-xs">Jun 2024 - Apr 2025</h5>

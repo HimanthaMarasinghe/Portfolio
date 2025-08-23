@@ -63,6 +63,17 @@ body {
     0% 1rem
     );
 }
+
+/* Skills */
+
+  .slice{
+    fill: #00f5d422; 
+    &:hover {
+      fill: #00f5d4;      /* change color */
+      filter: drop-shadow(0 0 10px #00f5d4); /* glow effect */
+      cursor: pointer;
+    }
+  }
         
 /* project cards */
 

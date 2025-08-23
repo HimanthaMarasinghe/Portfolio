@@ -10,7 +10,7 @@ export default function ContactUs() {
     <div className="h-full w-full flex flex-col relative">
       <h1 className="text-4xl font-bold">PROFILE</h1>
       <div className="flex-1 overflow-auto mt-5 p-1 border-3 border-[#00f5d4]" style={{ scrollbarWidth: 'none' }}>
-        <div className="p-5 min-h-full bg-[#00f5d41f] backdrop-blur-sm">
+        <div className="p-5 min-h-full bg-[#00403782]">
           <div className="flex flex-row gap-2">
             <div className="flex-1">
               <h1 className="text-5xl font-bold">Himantha Marasinghe</h1>
@@ -79,6 +79,11 @@ export default function ContactUs() {
 
           <div className="flex justify-between flex-col md:flex-row" style={{ fontFamily: 'var(--font-geist-sans)' }}>
             <div>
+              <h1 className="text-xl mt-5 mb-2">Contact Me</h1>
+              <p>+94 70 295 5010</p>
+              <a href="mailto:himanthamarasinghe@gmail.com">himanthamarasinghe@gmail.com</a>
+            </div>
+            <div className="md:text-right">
               <h1 className="text-xl mt-5 mb-2">Find Me Online</h1>
               <div className="flex gap-5">
                 <Link 
@@ -109,11 +114,6 @@ export default function ContactUs() {
                     />
                   </Link>
               </div>
-            </div>
-            <div className="md:text-right">
-              <h1 className="text-xl mt-5 mb-2">Contact Me</h1>
-              <p>+94 70 295 5010</p>
-              <a href="mailto:himanthamarasinghe@gmail.com">himanthamarasinghe@gmail.com</a>
             </div>
           </div>
         </div>

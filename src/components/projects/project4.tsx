@@ -54,7 +54,7 @@ const Project = () => {
                     </div>
                     <div className="h-1/2 p-2 pt-1 text-[#f5fa61] flex flex-col justify-start">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-2">
-                            <h2 className="text-2xl font-bold tracking-wider neon-text">
+                            <h2 className="text-2xl font-bold tracking-wider neon-text" style={{ fontFamily: 'var(--font-geist-sans)' }}>
                                 ReidXtreme
                             </h2>
                             <h5 className="text-xs">Sep 2024</h5>

@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^0.2.3",
     "@use-it/interval": "^1.0.0",
+    "d3-shape": "^3.2.0",
     "lucide-react": "^0.541.0",
     "next": "15.4.5",
     "react": "19.1.0",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/d3-shape": "^3.1.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
