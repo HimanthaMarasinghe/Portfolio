@@ -9,6 +9,7 @@ export default function LeftMenu() {
     { href: "/profile", label: "PROFILE" },
     { href: "/skills", label: "SKILLS" },
     { href: "/projects", label: "PROJECTS" },
+    { href: "/certificates", label: "CERTIFICATES" },
   ];
 
   return (

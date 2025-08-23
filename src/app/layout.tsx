@@ -43,7 +43,7 @@ export default function RootLayout({
       >
         <div className="flex h-screen md:mx-10">
           <LeftMenu />
-          <div className="flex-1 w-100 px-10 md:px-20 my-10 pb-15 md:pb-0">
+          <div className="flex-1 w-100 pr-8 md:pr-0 pl-8 md:pl-10 lg:pl-20 my-10 pb-15 md:pb-0">
             {children}
           </div>
         </div>

@@ -59,14 +59,19 @@ const Project = () => {
                             </h2>
                             <h5 className="text-xs">Sep 2024</h5>
                         </div>
-                        <p className="text-sm text-[#cafffb] leading-relaxed break-words" style={{ fontFamily: 'var(--font-geist-sans)' }}>
-                            <span id="p4-overflow-hidden-2">
-                                A single-page React app created as part of the recruitment process for the IEEE Student Branch at UCSC. {(" ")}
-                            </span>
-                            <span id="p4-overflow-hidden-1">
+                        <ul
+                            className="text-sm text-[#cafffb] leading-relaxed break-words grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-7 list-disc pl-5"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                            >
+                            <li id="p4-overflow-hidden-2">
+                                A single-page React app created as part of the recruitment process for the
+                                IEEE Student Branch at UCSC.
+                            </li>
+                            <li id="p4-overflow-hidden-1">
                                 This app showcases details for reidXtreme, a hackathon competition.
-                            </span>
-                        </p>
+                            </li>
+                        </ul>
+
                         <div id="p1-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
                             <div className="hidden lg:flex flex-wrap items-center justify-start gap-4 mt-2 h-full">
                                 <div className="text-center">
@@ -85,19 +90,19 @@ const Project = () => {
                     <Link 
                         href="https://github.com/HimanthaMarasinghe/TradeTrack" 
                         target="_blank" 
-                        className="text-sm md:text-lg text-[#f5fa61] hover:text-white transition-colors duration-300 mr-4 hidden lg:inline"
+                        className="text-sm md:text-lg text-[#f5fa61] hover:text-white transition-colors duration-300 mr-4"
                         style={{ fontFamily: 'var(--font-geist-mono)' }}>
                         GitHub
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
                     </Link>
                     <Link 
                         href="/" 
-                        className="text-sm lg:text-lg text-[#f5fa61] hover:text-white transition-colors duration-300"
+                        className="text-sm md:text-lg text-[#f5fa61] hover:text-white transition-colors duration-300"
                         style={{ fontFamily: 'var(--font-geist-mono)' }}
                         >
                         <FontAwesomeIcon icon={faCircleInfo} className="mr-1 !hidden lg:!inline" />
-                        <span className="hidden md:inline">More Details</span>
-                        <span className="hidden sm:inline md:hidden">More</span>
+                        <span className="hidden lg:inline">More Details</span>
+                        <span className="lg:hidden">More</span>
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
                     </Link>
                 </div>

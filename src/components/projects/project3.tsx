@@ -45,29 +45,33 @@ const Project = () => {
         <div className="project-3-wrapper bg-white w-full h-full p-1">
             <div className="project-3 bg-gray-800 w-full h-full overflow-hidden">
                 <div id="p3-container" className="h-[calc(100%_-_55px)] w-full overflow-hidden">
-                    <div className="h-1/2 w-full overflow-hidden p-1">
+                    <div className="h-1/3 lg:h-1/2 w-full overflow-hidden p-1">
                         <img
                             src="/projects/EAuc/Cover.png"
                             alt="TradeTrack"
                             className="project-image w-full h-full object-cover bg-[#cafffb33]"
                         />
                     </div>
-                    <div className="h-1/2 p-2 pt-1 text-white flex flex-col justify-start">
-                        <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-2">
+                    <div className="h-2/3 lg:h-1/2 p-2 pt-1 text-white flex flex-col justify-start">
+                        <div className="flex flex-col sm:flex-row lg:items-center justify-between mb-2">
                             <h2 className="text-2xl font-bold tracking-wider neon-text" style={{ fontFamily: 'var(--font-geist-sans)' }}>
                                 E-Auction System
                             </h2>
                             <h5 className="text-xs">Jun 2025 - Ongoing</h5>
                         </div>
-                        <p className="text-sm text-[#cafffb] leading-relaxed break-words" style={{ fontFamily: 'var(--font-geist-sans)' }}>
-                            <span id="p3-overflow-hidden-2">
-                                This project is an online e-auction platform developed for Sri Lanka Customs to auction seized items through web and mobile applications. {(" ")}
-                            </span>
-                            <span id="p3-overflow-hidden-1">
+                        <ul
+                            className="text-sm text-[#cafffb] leading-relaxed break-words grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-7  list-disc pl-5"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                            >
+                            <li id="p3-overflow-hidden-2">
+                                This project is an online e-auction platform developed for Sri Lanka Customs to auction seized items through web and mobile applications.
+                            </li>
+                            <li id="p3-overflow-hidden-1">
                                 This system is built with Spring Boot microservices, secure databases, and modern frontend frameworks, while also using Kafka, Redis, and WebSockets to ensure real-time and efficient performance.
-                            </span>
-                        </p>
-                        <div id="p3-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
+                            </li>
+                        </ul>
+
+                        <div id="p3-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 w-full h-fit mt-auto">
                             <div className="hidden lg:flex flex-wrap items-center justify-start gap-4 mt-2 h-full">
                                 <div className="text-center">
                                     <FontAwesomeIcon icon={faGraduationCap} size="xl"/>
@@ -78,10 +82,15 @@ const Project = () => {
                                     <h6 className="text-xs">Group</h6>
                                 </div>
                             </div>
-                            <div className="flex flex-wrap items-center justify-end gap-2 h-full">
-                                <img src="/logos/PHP.png" alt="PHP" className="w-10 sm:w-18 object-contain" />
-                                <img src="/logos/MySQL.png" alt="MySQL" className="w-10 sm:w-18 object-contain" />
-                                <img src="/logos/Apache_HTTP_server_logo.png" alt="Apache server" className="w-10 sm:w-18 object-contain" />
+                            <div className="flex flex-wrap items-center justify-end gap-2 h-full ml-auto">
+                                <img src="/logos/Spring.png" alt="Spring" className="h-10 w-10 object-contain" />
+                                <img src="/logos/PostgrSQL.png" alt="PostgreSQL" className="h-10 w-10 object-contain" />
+                                <img src="/logos/OracleDB.png" alt="OracleDB" className="h-10 w-10 object-contain" />
+                                <img src="/logos/Redis.png" alt="Redis" className="h-10 w-10 object-contain" />
+                                <img src="/logos/Kafka.svg" alt="Kafka" className="h-10 w-10 object-contain" />
+                                <img src="/logos/React.png" alt="React" className="h-10 w-10 object-contain" />
+                                <img src="/logos/reactnative.svg" alt="React-Native" className="h-10 w-10 object-contain" />
+                                <img src="/logos/Tailwind.png" alt="Tailwind" className="h-10 w-10 object-contain" />
                             </div>
                         </div>
                     </div>
@@ -90,7 +99,7 @@ const Project = () => {
                     <Link 
                         href="https://github.com/HimanthaMarasinghe/TradeTrack" 
                         target="_blank" 
-                        className="text-sm md:text-lg text-white hover:text-[#00f5d4] transition-colors duration-300 mr-4 hidden lg:inline"
+                        className="text-sm md:text-lg text-white hover:text-[#00f5d4] transition-colors duration-300 mr-4"
                         style={{ fontFamily: 'var(--font-geist-mono)' }}>
                         GitHub
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
@@ -101,8 +110,7 @@ const Project = () => {
                         style={{ fontFamily: 'var(--font-geist-mono)' }}
                         >
                         <FontAwesomeIcon icon={faCircleInfo} className="mr-1 !hidden md:!inline" />
-                        <span className="hidden md:inline">More Details</span>
-                        <span className="hidden sm:inline md:hidden">More</span>
+                        More Details
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
                     </Link>
                 </div>

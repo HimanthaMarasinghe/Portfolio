@@ -45,28 +45,31 @@ const Project = () => {
         <div className="project-1-wrapper bg-[#00f5d4] w-full h-full p-1">
             <div className="project-1 bg-gray-800 w-full h-full overflow-hidden">
                 <div id="p1-container" className="h-[calc(100%_-_55px)] w-full overflow-hidden">
-                    <div className="h-1/2 w-full overflow-hidden p-1">
+                    <div className="h-1/3 lg:h-1/2 w-full overflow-hidden p-1">
                         <img
                             src="/Projects/Trade/Cover.png"
                             alt="TradeTrack"
                             className="project-image w-full h-full object-cover bg-[#cafffb33]"
                         />
                     </div>
-                    <div className="h-1/2 p-2 pt-1 text-[#00f5d4] flex flex-col justify-start">
+                    <div className="h-2/3 lg:h-1/2 p-2 pt-1 text-[#00f5d4] flex flex-col justify-start">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-2">
                             <h2 className="text-2xl font-bold tracking-wider neon-text" style={{ fontFamily: 'var(--font-geist-sans)' }}>
                                 TradeTrack
                             </h2>
                             <h5 className="text-xs">Jun 2024 - Apr 2025</h5>
                         </div>
-                        <p className="text-sm text-[#cafffb] leading-relaxed break-words" style={{ fontFamily: 'var(--font-geist-sans)' }}>
-                            <span id="p1-overflow-hidden-2">
-                                This web-based system was developed to help small grocery stores in Sri Lanka manage their inventory, sales, and communication more efficiently. {(" ")}
-                            </span>
-                            <span id="p1-overflow-hidden-1">
+                        <ul
+                            className="text-sm text-[#cafffb] leading-relaxed break-words grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-7 list-disc pl-5"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                            >
+                            <li id="p1-overflow-hidden-2">
+                                This web-based system was developed to help small grocery stores in Sri Lanka manage their inventory, sales, and communication more efficiently.
+                            </li>
+                            <li id="p1-overflow-hidden-1">
                                 The system connects shop owners, suppliers, and customers through a digital platform, replacing manual processes like handwritten ledgers and phone-based orders.
-                            </span>
-                        </p>
+                            </li>
+                        </ul>
                         <div id="p1-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
                             <div className="hidden lg:flex flex-wrap items-center justify-start gap-4 mt-2 h-full">
                                 <div className="text-center">
@@ -78,10 +81,10 @@ const Project = () => {
                                     <h6 className="text-xs">Group</h6>
                                 </div>
                             </div>
-                            <div className="flex flex-wrap items-center justify-end gap-2 h-full">
-                                <img src="/logos/PHP.png" alt="PHP" className="w-10 sm:w-18 object-contain" />
-                                <img src="/logos/MySQL.png" alt="MySQL" className="w-10 sm:w-18 object-contain" />
-                                <img src="/logos/Apache_HTTP_server_logo.png" alt="Apache server" className="w-10 sm:w-18 object-contain" />
+                            <div className="flex flex-wrap items-center justify-end gap-2 h-full ml-auto">
+                                <img src="/logos/PHP.png" alt="PHP" className="h-13 w-18 rounded-2xl object-contain" />
+                                <img src="/logos/MySQL.png" alt="MySQL" className="bg-white h-13 w-18 rounded-2xl object-contain" />
+                                <img src="/logos/Apache_HTTP_server_logo.png" alt="Apache server" className="bg-white h-13 w-18 rounded-2xl object-contain" />
                             </div>
                         </div>
                     </div>
