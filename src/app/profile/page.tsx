@@ -25,6 +25,23 @@ export default function ContactUs() {
                   }}
                 />
               </div>
+              <div className="md:hidden flex flex-col items-center mb-5">
+                <div className="border-1 border-[#00f5d4] rounded-xl p-1 h-50 w-50">
+                  <img
+                    src="/Profile/Profile.jpg"
+                    className="object-cover bg-white rounded-md aspect-square"
+                      />
+                </div>
+                <a
+                  href="/resume.pdf"
+                  download="Himantha_Marasinghe_Resume.pdf"
+                  className="border-1 mt-3 border-[#00f5d4] rounded p-1 flex justify-center items-center gap-1 bg-black relative"
+                  style={{ fontFamily: 'var(--font-geist-mono)' }}
+                >
+                  Download Resume
+                  <FontAwesomeIcon icon={faDownload} size="lg" />
+                </a>
+              </div>
               <h1 className="text-xl" style={{ fontFamily: 'var(--font-geist-mono)' }}>About Me</h1>
               <p style={{ fontFamily: 'var(--font-geist-sans)' }}>
                 I am an undergraduate with a strong passion for building efficient and user-focused software solutions. 
@@ -32,7 +49,7 @@ export default function ContactUs() {
                 I thrive in team environments while also taking responsibility to contribute effectively and deliver results.
               </p>
             </div>
-            <div>
+            <div className="hidden md:block">
               <div className="border-1 border-[#00f5d4] rounded-xl p-1 h-50 w-50">
                 <img
                   src="/Profile/Profile.jpg"

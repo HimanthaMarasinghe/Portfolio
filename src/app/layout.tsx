@@ -41,9 +41,9 @@ export default function RootLayout({
           backgroundPosition: "left"
         }}
       >
-        <div className="flex h-screen mx-10">
+        <div className="flex h-screen md:mx-10">
           <LeftMenu />
-          <div className="flex-1 w-100 px-20 my-10">
+          <div className="flex-1 w-100 px-10 md:px-20 my-10 pb-15 md:pb-0">
             {children}
           </div>
         </div>

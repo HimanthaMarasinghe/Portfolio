@@ -59,11 +59,3 @@ export default function ContactUs() {
     </div>
   );
 }
-
-function Card({ title }: { title: string }) {
-  return (
-    <div className="bg-purple-700 rounded-xl h-full flex items-center justify-center text-xl font-bold">
-      {title}
-    </div>
-  );
-}

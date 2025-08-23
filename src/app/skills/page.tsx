@@ -1,7 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWifi } from "@fortawesome/free-solid-svg-icons";
-import { BatteryMedium } from "lucide-react";
-
 import Wheel from "../../components/wheel";
 
 export default function ContactUs() {
@@ -84,8 +80,8 @@ export default function ContactUs() {
           <div className="h-full w-3 bg-black" />
       </div>
       <div className="absolute bg-[#00f5d4] h-5 w-20 top-10 right-0 flex gap-1 justify-center items-center profile-c-r-t">
-        <BatteryMedium size={20} color="black" />
-        <FontAwesomeIcon icon={faWifi} size="sm" color="black" />
+          <div className="h-3 w-3 rounded-full bg-black" />
+          <div className="h-3 w-3 rounded-full bg-black" />
       </div>
       <div className="absolute bg-[#00f5d4] h-40 w-6 bottom-0 -left-6 text-black font-bold profile-c-l flex flex-col items-center justify-center py-10">
         <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
