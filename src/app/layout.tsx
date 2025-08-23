@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
+
+import LeftMenu from "@/components/leftMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-orbitron',
 });
 
 export const metadata: Metadata = {
@@ -25,9 +33,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} antialiased`}
+        style={{ 
+          fontFamily: 'var(--font-orbitron)',
+          backgroundImage: "url('/BG.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "left"
+        }}
       >
-        {children}
+        <div className="flex h-screen mx-10">
+          <LeftMenu />
+          <div className="flex-1 px-20 my-10">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

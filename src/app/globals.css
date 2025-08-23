@@ -19,8 +19,464 @@
   }
 }
 
+* {
+  /* animation-play-state: paused !important; */
+  /* animation-duration: 100s !important; */
+}
+
 body {
-  background: var(--background);
+  background: black;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Profile */
+
+.profile-c-r {
+  clip-path: polygon(
+    calc(100% - 1.1rem) 0%,
+    100% 1rem,
+    100% calc(100% - 1rem),
+    calc(100% - 1rem) 100%,
+    1.25rem 100%,
+    0% calc(100% - 1.26rem),
+    calc(100% - 1.1rem) calc(100% - 1.26rem)
+  );
+}
+
+.profile-c-r-t {
+  clip-path: polygon(
+    1rem 0%,
+    calc(100% - 1rem) 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.profile-c-l {
+  clip-path: polygon(
+    1rem 0%,
+    100% 0%,
+    100% 100%,
+    0.5rem 100%,
+    0% calc(100% - 0.5rem),
+    0% 1rem
+    );
+}
+        
+/* project cards */
+
+
+.project-1,
+.project-1-wrapper {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 300px) 0%,
+    calc(100% - 300px) 50px,
+    100% 50px,
+    100% 100%,
+    100px 100%,
+    100px calc(100% - 50px),
+    0% calc(100% - 50px),
+    0% 100%
+  );
+}
+
+.project-1 .project-image {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 300px) 0%,
+    calc(100% - 300px) 50px,
+    100% 50px,
+    100% 100%,
+    100px 100%,
+    0% 100%
+  );
+}
+
+@media (max-width: 767px) {
+  .project-1,
+  .project-1-wrapper {
+    clip-path: polygon(
+      0% 0%,
+      calc(100% - 100px) 0%,
+      calc(100% - 100px) 50px,
+      100% 50px,
+      100% 100%,
+      100px 100%,
+      100px calc(100% - 50px),
+      0% calc(100% - 50px),
+      0% 100%
+    );
+  }
+
+  .project-1 .project-image {
+    clip-path: polygon(
+      0% 0%,
+      calc(100% - 100px) 0%,
+      calc(100% - 100px) 50px,
+      100% 50px,
+      100% 100%,
+      100px 100%,
+      0% 100%
+    );
+  }
+}
+
+.project-1-corner {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 20px) 0%,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0% calc(100% - 20px)
+  );
+}
+
+/* project 2 */
+
+.project-2,
+.project-2-wrapper {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 100px) 0%,
+    100% 100px,
+    100% 100%,
+    100px 100%,
+    0% calc(100% - 100px)
+  );
+}
+
+.project-2 .project-image {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 100px) 0%,
+    100% 100px,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.project-2-corner-1 {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 50px) 0%,
+    100% 50px,
+    100% 100%
+  );
+}
+
+.project-2-corner-2 {
+  clip-path: polygon(
+    0% 0%,
+    100% 100%,
+    50px 100%,
+    0% calc(100% - 50px)
+  );
+}
+
+/* project 3 */
+
+.project-3{
+  clip-path: polygon(
+    10px 0%,
+    150px 0%,
+    200px 50px,
+    calc(100% - 200px) 50px,
+    calc(100% - 150px) 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    150px 100%,
+    100px calc(100% - 50px),
+    0% calc(100% - 50px),
+    0% 10px
+  );
+}
+
+.project-3-wrapper {
+  clip-path: polygon(
+    10px 0%,
+    157px 0%,
+    207px 50px,
+    calc(100% - 207px) 50px,
+    calc(100% - 157px) 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    150px 100%,
+    100px calc(100% - 50px),
+    0% calc(100% - 50px),
+    0% 10px
+  );
+}
+
+.project-3 .project-image {
+  clip-path: polygon(
+    10px 0%,
+    143px 0%,
+    193px 50px,
+    calc(100% - 193px) 50px,
+    calc(100% - 143px) 0%,
+    calc(100% - 10px) 0%,
+    100% 10px,
+    100% 100%,
+    0% 100%,
+    0% 10px
+  );
+}
+
+.project-3-corner-1 {
+  clip-path: polygon(
+    164px 0%,
+    calc(100% - 164px) 0%,
+    calc(100% - 211px) 100%,
+    211px 100%
+  );
+}
+
+@media (max-width: 1000px) {
+  .project-3{
+    clip-path: polygon(
+      10px 0%,
+      50px 0%,
+      100px 50px,
+      calc(100% - 100px) 50px,
+      calc(100% - 50px) 0%,
+      calc(100% - 10px) 0%,
+      100% 10px,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      150px 100%,
+      100px calc(100% - 50px),
+      0% calc(100% - 50px),
+      0% 10px
+    );
+  }
+
+  .project-3-wrapper {
+    clip-path: polygon(
+      10px 0%,
+      57px 0%,
+      107px 50px,
+      calc(100% - 107px) 50px,
+      calc(100% - 57px) 0%,
+      calc(100% - 10px) 0%,
+      100% 10px,
+      100% calc(100% - 10px),
+      calc(100% - 10px) 100%,
+      150px 100%,
+      100px calc(100% - 50px),
+      0% calc(100% - 50px),
+      0% 10px
+    );
+  }
+
+  .project-3 .project-image {
+    clip-path: polygon(
+      10px 0%,
+      43px 0%,
+      93px 50px,
+      calc(100% - 93px) 50px,
+      calc(100% - 43px) 0%,
+      calc(100% - 10px) 0%,
+      100% 10px,
+      100% 100%,
+      0% 100%,
+      0% 10px
+    );
+  }
+
+  .project-3-corner-1 {
+    clip-path: polygon(
+      64px 0%,
+      calc(100% - 64px) 0%,
+      calc(100% - 111px) 100%,
+      111px 100%
+    );
+  }
+}
+
+.project-3-corner-2 {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 45px) 0%,
+    100% 100%,
+    45px 100%
+  );
+}
+
+/* project 4 */
+
+.project-4,
+.project-4-wrapper {
+  clip-path: polygon(
+    0% 100px,
+    100px 0%,
+    100% 0%,
+    100% calc(100% - 60px),
+    calc(100% - 10px) calc(100% - 50px),
+    calc(100% - 190px) calc(100% - 50px),
+    calc(100% - 200px) calc(100% - 40px),
+    calc(100% - 200px) calc(100% - 10px),
+    calc(100% - 210px) 100%,
+    0% 100%
+  );
+}
+
+.project-4 .project-image  {
+  clip-path: polygon(
+    0% 100px,
+    100px 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.project-4-corner-1 {
+  clip-path: polygon(
+    50px 0%,
+    100% 0%,
+    0% 100%,
+    0% 50px
+  );
+}
+
+.project-4-corner-2 {
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+}
+
+/* project 5 */
+
+.project-5,
+.project-5-wrapper {
+  clip-path: polygon(
+    100px 0%,
+    calc(100% - 100px) 0%,
+    100% 100px,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    30px 100%,
+    0% calc(100% - 30px),
+    0% 100px
+  );
+}
+
+.project-5 .project-image {
+  clip-path: polygon(
+    100px 0%,
+    calc(100% - 100px) 0%,
+    100% 100px,
+    100% 100%,
+    0% 100%,
+    0% 100px
+  );
+}
+
+/* project 6 */
+
+.project-6,
+.project-6-wrapper {
+  clip-path: polygon(
+    20px 0%,
+    100% 0%,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0% 100%,
+    0% 20px
+  );
+}
+
+.project-6 .project-image {
+  clip-path: polygon(
+    20px 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%,
+    0% 20px
+  );
+}
+
+.project-7,
+.project-7-wrapper {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 40px) 0%,
+    100% 40px,
+    100% 100%,
+    40px 100%,
+    0% calc(100% - 40px)
+  );
+}
+
+.project-7 .project-image {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 40px) 0%,
+    100% 40px,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.project-8,
+.project-8-wrapper {
+  clip-path: polygon(
+    30px 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%,
+    0% 30px
+  );
+}
+
+.project-8 .project-image {
+  clip-path: polygon(
+    30px 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.project-9,
+.project-9-wrapper {
+  clip-path: polygon(
+    0% 10px,
+    10px 0%,
+    20px 10px,
+    30px 0%,
+    40px 10px,
+    100% 0%,
+    100% 100%,
+    40px 100%,
+    30px calc(100% - 10px),
+    20px 100%,
+    10px calc(100% - 10px),
+    0% 100%
+  );
+}
+
+.project-9 .project-image {
+  clip-path: polygon(
+    0% 10px,
+    10px 0%,
+    20px 10px,
+    30px 0%,
+    40px 10px,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
 }
