@@ -7,8 +7,6 @@ import Project4 from "@/components/projects/project4";
 import Project5 from "@/components/projects/project5";
 import Project6 from "@/components/projects/project6";
 import Project7 from "@/components/projects/project7";
-import Project8 from "@/components/projects/project8";
-import Project9 from "@/components/projects/project9";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -53,8 +51,6 @@ export default function ContactUs() {
         <SwiperSlide><Project5 /></SwiperSlide>
         <SwiperSlide><Project6 /></SwiperSlide>
         <SwiperSlide><Project7 /></SwiperSlide>
-        <SwiperSlide><Project8 /></SwiperSlide>
-        <SwiperSlide><Project9 /></SwiperSlide>
       </Swiper>
     </div>
   );

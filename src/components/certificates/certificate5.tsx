@@ -12,7 +12,7 @@ export default () => {
             <h1 className="text-center text-black font-bold rotate-45 -translate-y-2.5 translate-x-2.5">Java</h1>
         </div>
         <div className="project-4-corner-1 absolute top-0 lef-0 w-[90px] h-[90px] bg-[#f26f76] flex items-center justify-center">
-            <h1 className="text-center text-black font-bold -rotate-45 -translate-x-2.5 -translate-y-2.5">5 / 11</h1>
+            <h1 className="text-center text-black font-bold -rotate-45 -translate-x-2.5 -translate-y-2.5">5 / 12</h1>
         </div>
     </div>
   );

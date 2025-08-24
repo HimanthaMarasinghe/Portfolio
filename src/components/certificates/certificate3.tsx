@@ -12,7 +12,7 @@ export default () => {
             <h1 className="text-center text-black font-bold">Docker</h1>
         </div>
         <div className="project-3-corner-2 absolute bottom-0 left-0 w-[140px] h-[45px] bg-white flex items-center justify-center">
-            <h1 className="text-center text-black font-bold">3 / 11</h1>
+            <h1 className="text-center text-black font-bold">3 / 12</h1>
         </div>
     </div>
   );

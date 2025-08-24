@@ -11,6 +11,7 @@ import Certificate8 from "@/components/certificates/certificate8";
 import Certificate9 from "@/components/certificates/certificate9";
 import Certificate10 from "@/components/certificates/certificate10";
 import Certificate11 from "@/components/certificates/certificate11";
+import Certificate12 from "@/components/certificates/certificate12";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -59,6 +60,7 @@ export default function ContactUs() {
         <SwiperSlide><Certificate9 /></SwiperSlide>
         <SwiperSlide><Certificate10 /></SwiperSlide>
         <SwiperSlide><Certificate11 /></SwiperSlide>
+        <SwiperSlide><Certificate12 /></SwiperSlide>
       </Swiper>
     </div>
   );

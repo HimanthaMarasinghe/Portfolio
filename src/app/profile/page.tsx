@@ -33,8 +33,8 @@ export default function ContactUs() {
                       />
                 </div>
                 <a
-                  href="/resume.pdf"
-                  download="Himantha_Marasinghe_Resume.pdf"
+                  href="/Profile/Himantha-CV.pdf"
+                  download="Himantha_Marasinghe_CV.pdf"
                   className="border-1 mt-3 border-[#00f5d4] rounded p-1 flex justify-center items-center gap-1 bg-black relative"
                   style={{ fontFamily: 'var(--font-geist-mono)' }}
                 >
@@ -57,8 +57,8 @@ export default function ContactUs() {
                     />
               </div>
               <a
-                href="/resume.pdf"
-                download="Himantha_Marasinghe_Resume.pdf"
+                href="/Profile/Himantha-CV.pdf"
+                download="Himantha_Marasinghe_CV.pdf"
                 className="border-1 mt-3 border-[#00f5d4] rounded p-1 flex justify-center items-center gap-1 bg-black relative"
                 style={{ fontFamily: 'var(--font-geist-mono)' }}
               >

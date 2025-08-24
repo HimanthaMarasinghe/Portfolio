@@ -14,7 +14,7 @@ export default () => {
             <h1 className="text-center text-black font-bold -rotate-45 translate-y-2.5 -translate-x-2.5">
                 <p className="rotate-45 translate-y-2">8</p>
                 <p className="rotate-45">/</p>
-                <p className="rotate-45 -translate-y-2">11</p>
+                <p className="rotate-45 -translate-y-2">12</p>
             </h1>
         </div>
     </div>

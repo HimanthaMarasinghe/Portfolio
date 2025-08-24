@@ -15,7 +15,7 @@ export default function LeftMenu() {
   return (
     <>
       {/* Desktop (Left Sidebar) */}
-      <div className="hidden md:flex flex-col justify-between my-20 w-60">
+      <div className="hidden lg:flex flex-col justify-between my-20 w-60">
         <div>
           <h1 className="font-bold text-2xl">HIMANTHA</h1>
         </div>
@@ -40,21 +40,23 @@ export default function LeftMenu() {
       </div>
 
       {/* Mobile (Bottom Bar) */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white flex justify-around py-3 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white flex justify-around lg:hidden">
         {links.map((link) => {
           const isActive = pathname === link.href;
           return (
-            <Link key={link.href} href={link.href}>
-              <span
-                className={`px-3 font-bold
-                  ${isActive
-                    ? "text-[#00f5d4]"
-                    : "text-gray-300 hover:text-white"
-                  }`}
-              >
-                {link.label}
-              </span>
-            </Link>
+            <div key={link.href} className={`flex-1 py-3 text-center ${isActive ? "bg-[#00f5d4]" : ""}`}>
+              <Link href={link.href}>
+                <span
+                  className={`px-3 font-bold text-xs sm:text-sm md:text-base
+                    ${isActive
+                      ? "text-black"
+                      : "text-gray-300 hover:text-white"
+                    }`}
+                >
+                  {link.label}
+                </span>
+              </Link>
+            </div>
           );
         })}
       </div>

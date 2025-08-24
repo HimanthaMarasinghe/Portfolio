@@ -9,7 +9,7 @@ export default () => {
             </div>
         </div>
         <div className="project-4-corner-1 absolute top-0 left-0 w-[90px] h-[90px] bg-[#f5fa61] flex items-center justify-center">
-            <h1 className="text-center text-black font-bold -rotate-45 -translate-x-2.5 -translate-y-2.5">4 / 11</h1>
+            <h1 className="text-center text-black font-bold -rotate-45 -translate-x-2.5 -translate-y-2.5">4 / 12</h1>
         </div>
         <div className="project-4-corner-2 absolute bottom-0 right-0 w-[195px] h-[45px] bg-[#f5fa61] flex items-center justify-center">
             <h1 className="text-center text-black font-bold">CodeIgniter</h1>

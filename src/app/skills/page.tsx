@@ -5,17 +5,17 @@ export default function ContactUs() {
     <div className="h-full w-full flex flex-col relative">
       <h1 className="text-4xl font-bold">SKILLS</h1>
         <div className="flex-1 w-full overflow-auto mt-5 p-1 border-3 border-[#00f5d4]" style={{ scrollbarWidth: 'none' }}>
-        <div className="p-5 min-h-full bg-[#00f5d41f] flex flex-col" style={{ fontFamily: 'var(--font-geist-sans)' }}>
-          <div className="flex items-center justify-around gap-15 mb-15 flex-col xl:flex-row">
+        <div className="p-1 min-h-full bg-[#00f5d41f] flex flex-col" style={{ fontFamily: 'var(--font-geist-sans)' }}>
+          <div className="flex items-center justify-between flex-col xl:flex-row">
             <div>
               <Wheel items={[
                 { image: "/Logos/Bootstrap.png", label: "Bootstrap" },
                 { image: "/Logos/mui.png", label: "MUI" },
-                { image: "/Logos/React.png", label: "React-Native" },
                 { image: "/Logos/React.png", label: "React" },
+                { image: "/Logos/React.png", label: "React-Native" },
                 { image: "/Logos/Next.webp", label: "Next.js" },
-                { image: "/Logos/Tailwind.png", label: "Tailwind" },
                 { image: "/Logos/jfx.png", label: "JavaFX" },
+                { image: "/Logos/Tailwind.png", label: "Tailwind" },
               ]}
               centerText="Front-End"
               />
@@ -24,51 +24,58 @@ export default function ContactUs() {
               <Wheel items={[
                 { image: "/Logos/express.png", label: "Express.js" },
                 { image: "/Logos/Kafka.svg", label: "Kafka" },
+                { image: "/Logos/ejs.png", label: "EJS" },
                 { image: "/Logos/Spring.png", label: "Spring-Boot" },
                 { image: "/Logos/Node.png", label: "Node.js" },
                 { image: "/Logos/Redis.png", label: "Redis" },
+                { image: "/Logos/jwt.svg", label: "JWT" },
                 { image: "/Logos/appwrite.png", label: "Appwrite" },
               ]}
               centerText="Back-End"
               />
             </div>
           </div>
-          <div className="flex items-center justify-around gap-15 mb-15 flex-col xl:flex-row">
+          <div className="flex items-center justify-around flex-col xl:flex-row">
             <div>
               <Wheel items={[
-                { image: "/Logos/Redis.png", label: "Redis" },
+                { image: "/Logos/OracleDB.png", label: "OracleDB" },
                 { image: "/Logos/MySQLBG.png", label: "MySQL" },
                 { image: "/Logos/PostgrSQL.png", label: "PostgreSQL" },
-                { image: "/Logos/OracleDB.png", label: "OracleDB" },
+                { image: "/Logos/Redis.png", label: "Redis" },
                 { image: "/Logos/Mongo.webp", label: "MongoDB" },
               ]}
               centerText="Databases"
               />
             </div>
           </div>
-          <div className="flex items-center justify-around gap-15 mb-15 flex-col xl:flex-row">
+          <div className="flex items-center justify-around flex-col xl:flex-row">
             <div>
               <Wheel items={[
                 { image: "/Logos/PHP.png", label: "PHP" },
-                { image: "/Logos/TS.png", label: "TypeScript" },
+                { image: "/Logos/R.png", label: "R" },
                 { image: "/Logos/JS.png", label: "JavaScript" },
                 { image: "/Logos/Java.png", label: "Java" },
                 { image: "/Logos/C.png", label: "C" },
-                { image: "/Logos/R.png", label: "R" },
+                { image: "/Logos/TS.png", label: "TypeScript" },
               ]}
               centerText="Languages"
               />
             </div>
             <div>
               <Wheel items={[
+                { image: "/Logos/Figma.png", label: "Figma" },
                 { image: "/Logos/Docker.png", label: "Docker" },
-                { image: "/Logos/Linux.png", label: "Linux" },
                 { image: "/Logos/Git.png", label: "Git" },
+                { image: "/Logos/Linux.png", label: "Linux" },
+                { image: "/Logos/Postman.png", label: "Postman" },
                 { image: "/Logos/github.webp", label: "GitHub" },
-                { image: "/Logos/MavenBG.jpeg", label: "Maven" },
+                { image: "/Logos/Maven.png", label: "Maven" },
                 { image: "/Logos/AWS.png", label: "AWS" },
+                { image: "/Logos/IJ.png", label: "IntelliJ" },
+                { image: "/Logos/VS.png", label: "VS Code" },
               ]}
               centerText="Other"
+              imageSize={40}
               />
             </div>
           </div>
