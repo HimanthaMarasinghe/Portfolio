@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Himantha Marasinghe",
   description:
     "Portfolio of Himantha Marasinghe, an undergraduate student specializing in full-stack development, React, Spring Boot, and React-Native applications. Explore my projects and skills.",
-
+  metadataBase: new URL('https://himantha.me'),
   keywords: [
     "Himantha Marasinghe",
     "Software Engineering",
@@ -76,8 +76,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
-
-  themeColor: "#00f5d4", // matches your design
 };
 
 

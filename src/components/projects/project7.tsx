@@ -1,16 +1,55 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight, faPaw } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import { useEffect } from "react";
 
 const Project = () => {
+    
+    useEffect(() => {
+        const container = document.getElementById("p7-container");
+        const targets = [
+            document.getElementById("p7-overflow-hidden-1"),
+            document.getElementById("p7-overflow-hidden-2"),
+            document.getElementById("p7-overflow-hidden-3")
+        ];
 
+        const handleOverflow = () => {
+            if (!container) return;
+            for(const el of targets) {
+                if (el) el.classList.remove("hidden");
+            }
+            for(const el of targets) {
+                if (container.scrollHeight <= container.clientHeight) break;
+                if (el) el.classList.add("hidden");
+            }
+        }
+
+        handleOverflow();
+
+        let timeoutId: ReturnType<typeof setTimeout>;
+        const debouncedHandleOverflow = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(handleOverflow, 150); // delay in ms
+        }
+
+        window.addEventListener('resize', debouncedHandleOverflow);
+
+        //CleanUp on unmount
+        return () => {
+            window.removeEventListener('resize', debouncedHandleOverflow);
+        };
+    }, []);
+    
   return (
     <div className="w-full h-[70vh] relative top-1/2 transform -translate-y-1/2 overflow-hidden transition-shadow duration-300">
         <div className="project-5-wrapper bg-[#f26f76] w-full h-full p-1">
             <div className="project-5 bg-gray-800 w-full h-full overflow-hidden">
-                <div id="p5-container" className="h-[calc(100%_-_50px)] w-full overflow-hidden">
+                <div id="p7-container" className="h-[calc(100%_-_50px)] w-full overflow-hidden">
                     <div className="h-1/3 lg:h-1/2 w-full overflow-hidden p-1">
-                        <img
+                        <Image 
+                            unoptimized
+                            height={1000} width={3000}
                             src="/Projects/Portfolio/Cover.gif"
                             alt="TradeTrack"
                             className="project-image w-full h-full object-cover bg-[#cafffb33]"
@@ -28,15 +67,15 @@ const Project = () => {
                             className="text-sm text-[#cafffb] leading-relaxed break-words grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-7 list-disc pl-5"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                             >
-                            <li id="p4-overflow-hidden-2">
+                            <li id="p7-overflow-hidden-2">
                                 My portfolio is built with Next.js and features a gamified UI to present my work in an engaging way.
                             </li>
-                            <li id="p4-overflow-hidden-1">
+                            <li id="p7-overflow-hidden-1">
                                 It highlights my projects and skills with a neon color theme for a modern look.
                             </li>
                         </ul>
 
-                        <div id="p5-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
+                        <div id="p7-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
                             <div className="hidden lg:flex flex-wrap items-center justify-start gap-4 h-full">
                                 <div className="text-center">
                                     <FontAwesomeIcon icon={faPaw} size="xl"/>
@@ -45,8 +84,8 @@ const Project = () => {
                             </div>
                             <div className="flex flex-wrap items-center justify-end gap-2 h-full ml-auto">
                                 <div className="flex flex-wrap items-center justify-end gap-2 h-full">
-                                    <img src="/logos/Next.webp" alt="Next.js" className="h-13 w-18 p-1 object-contain" />
-                                    <img src="/logos/Tailwind.png" alt="Tailwind CSS" className="h-13 w-18 p-1 object-contain" />
+                                    <Image height={40} width={40} src="/Logos/Next.webp" alt="Next.js" className="h-13 w-18 p-1 object-contain" />
+                                    <Image height={40} width={40} src="/Logos/Tailwind.png" alt="Tailwind CSS" className="h-13 w-18 p-1 object-contain" />
                                 </div>
                             </div>
                         </div>

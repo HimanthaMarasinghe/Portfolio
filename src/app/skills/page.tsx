@@ -1,4 +1,5 @@
 import Wheel from "../../components/wheel";
+import Image from "next/image";
 
 export default function ContactUs() {
   return (
@@ -67,7 +68,7 @@ export default function ContactUs() {
                 { image: "/Logos/Docker.png", label: "Docker" },
                 { image: "/Logos/Git.png", label: "Git" },
                 { image: "/Logos/Linux.png", label: "Linux" },
-                { image: "/Logos/Postman.png", label: "Postman" },
+                { image: "/Logos/postman.png", label: "Postman" },
                 { image: "/Logos/github.webp", label: "GitHub" },
                 { image: "/Logos/Maven.png", label: "Maven" },
                 { image: "/Logos/AWS.png", label: "AWS" },
@@ -91,12 +92,12 @@ export default function ContactUs() {
           <div className="h-3 w-3 rounded-full bg-black" />
       </div>
       <div className="absolute bg-[#00f5d4] h-40 w-6 bottom-0 -left-6 text-black font-bold profile-c-l flex flex-col items-center justify-center py-10">
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
-        <img src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
+        <Image unoptimized alt="scroll down" height={40} width={40} src="/Down.webp" className="h-[80%] w-[80%] object-contain" />
       </div>
     </div>
   );

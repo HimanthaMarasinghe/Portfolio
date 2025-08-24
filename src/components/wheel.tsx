@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useId, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import * as d3 from "d3-shape";
 
 interface Item {
@@ -27,7 +27,6 @@ const DonutWheel: React.FC<DonutWheelProps> = ({
   imageSize = 50,
   centerText = "Select",
 }) => {
-  const uniqueId = useId();
 
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1200
@@ -54,14 +53,14 @@ const DonutWheel: React.FC<DonutWheelProps> = ({
   const centerFontSize = 23 * scale;
 
   const arcs = d3
-    .pie<any>()
+    .pie<Item>()
     .value(1)
     .sort(null)
     .startAngle(Math.PI)
     .endAngle(Math.PI * 2 + Math.PI)(items);
 
   const arcGen = d3
-    .arc<any>()
+    .arc<d3.PieArcDatum<Item>>() 
     .innerRadius(innerRadiusScaled)
     .outerRadius(outerRadiusScaled)
     .padAngle(0.05)

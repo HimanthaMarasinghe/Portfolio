@@ -1,10 +1,12 @@
-export default () => {
+import Image from "next/image";
+
+const Certificate2 = () => {
   return (
     <div className="w-full h-[70vh] relative top-1/2 transform -translate-y-1/2 overflow-hidden transition-shadow duration-300">
         <div className="project-2-wrapper bg-[#ee7ffa] w-full h-full p-1">
             <div className="project-2 bg-gray-800 w-full h-full overflow-hidden flex flex-col justify-center items-center py-15" style={{ fontFamily: "var(--font-geist-sans)" }}>
                 <h1>CI/CD for Beginners - Udemy</h1>
-                <img src="/Certificates/DevOps.jpg" className="object-contain max-h-full sm:px-15 md:px-0" />
+                <Image height={3500} width={4000} alt="CI/CD for Beginners - Udemy" src="/Certificates/DevOps.jpg" className="object-contain max-h-full sm:px-15 md:px-0" />
             </div>
         </div>
         <div className="project-2-corner-1 absolute top-0 right-0 w-[90px] h-[90px] bg-[#ee7ffa] flex items-center justify-center">
@@ -20,3 +22,5 @@ export default () => {
     </div>
   );
 };
+
+export default Certificate2;

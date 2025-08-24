@@ -1,16 +1,55 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight, faPaw } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import { useEffect } from "react";
 
 const Project = () => {
+        
+    useEffect(() => {
+        const container = document.getElementById("p4-container");
+        const targets = [
+            document.getElementById("p4-overflow-hidden-1"),
+            document.getElementById("p4-overflow-hidden-2"),
+            document.getElementById("p4-overflow-hidden-3")
+        ];
+
+        const handleOverflow = () => {
+            if (!container) return;
+            for(const el of targets) {
+                if (el) el.classList.remove("hidden");
+            }
+            for(const el of targets) {
+                if (container.scrollHeight <= container.clientHeight) break;
+                if (el) el.classList.add("hidden");
+            }
+        }
+
+        handleOverflow();
+
+        let timeoutId: ReturnType<typeof setTimeout>;
+        const debouncedHandleOverflow = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(handleOverflow, 150); // delay in ms
+        }
+
+        window.addEventListener('resize', debouncedHandleOverflow);
+
+        //CleanUp on unmount
+        return () => {
+            window.removeEventListener('resize', debouncedHandleOverflow);
+        };
+    }, []);
 
   return (
     <div className="w-full h-[70vh] relative top-1/2 transform -translate-y-1/2 overflow-hidden transition-shadow duration-300">
         <div className="project-5-wrapper bg-[#f26f76] w-full h-full p-1">
             <div className="project-5 bg-gray-800 w-full h-full overflow-hidden">
-                <div id="p5-container" className="h-[calc(100%_-_50px)] w-full overflow-hidden">
+                <div id="p4-container" className="h-[calc(100%_-_50px)] w-full overflow-hidden">
                     <div className="h-1/3 lg:h-1/2 w-full overflow-hidden p-1">
-                        <img
+                        <Image 
+                            unoptimized
+                            height={1000} width={3000}
                             src="/Projects/Movie/Cover.gif"
                             alt="TradeTrack"
                             className="project-image w-full h-full object-cover bg-[#cafffb33]"
@@ -28,17 +67,17 @@ const Project = () => {
                             className="text-sm text-[#cafffb] leading-relaxed break-words grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-7 list-disc pl-5"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                             >
-                            <li id="p5-overflow-hidden-2">
+                            <li id="p4-overflow-hidden-2">
                                 This project is a cross-platform movie watchlist application built with
                                 React, React Native, and Tailwind CSS.
                             </li>
-                            <li id="p5-overflow-hidden-1">
+                            <li id="p4-overflow-hidden-1">
                                 This app uses Appwrite for authentication and integrates the Gemini API to
                                 fetch movies based on story descriptions.
                             </li>
                         </ul>
 
-                        <div id="p5-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
+                        <div id="p4-overflow-hidden-3" className="flex flex-wrap items-center justify-between gap-2 mt-2 w-full h-full">
                             <div className="hidden lg:flex flex-wrap items-center justify-start gap-4 h-full">
                                 <div className="text-center">
                                     <FontAwesomeIcon icon={faPaw} size="xl"/>
@@ -46,10 +85,10 @@ const Project = () => {
                                 </div>
                             </div>
                             <div className="flex flex-wrap items-center justify-end gap-2 h-full ml-auto">
-                                <img src="/logos/React.png" alt="React" className="w-18  object-contain" />
-                                <img src="/logos/reactnative.svg" alt="React Native" className="w-18  object-contain" />
-                                <img src="/logos/Tailwind.png" alt="Tailwind CSS" className="w-18  object-contain" />
-                                <img src="/logos/appwrite.png" alt="Appwrite" className="w-18  object-contain" />
+                                <Image height={40} width={40} src="/Logos/React.png" alt="React" className="h-10 w-15 sm:h-13 sm:w-18  object-contain" />
+                                <img src="/Logos/reactnative.svg" alt="React Native" className="h-10 w-15 sm:h-13 sm:w-18  object-contain" />
+                                <Image height={40} width={40} src="/Logos/Tailwind.png" alt="Tailwind CSS" className="h-10 w-15 sm:h-13 sm:w-18  object-contain" />
+                                <Image height={40} width={40} src="/Logos/appwrite.png" alt="Appwrite" className="h-10 w-15 sm:h-13 sm:w-18  object-contain" />
                             </div>
                         </div>
                     </div>
@@ -58,17 +97,17 @@ const Project = () => {
                     <Link 
                         href="https://github.com/HimanthaMarasinghe/movieApp" 
                         target="_blank" 
-                        className="text-sm md:text-lg text-[#f26f76] hover:text-white transition-colors duration-300 mr-4"
+                        className="text-xs sm:text-sm md:text-lg text-[#f26f76] hover:text-white transition-colors duration-300 mr-4 text-right"
                         style={{ fontFamily: 'var(--font-geist-mono)' }}>
-                        GitHub (web)
+                        GitHub(web)
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
                     </Link>
                     <Link 
                         href="https://github.com/HimanthaMarasinghe/MovieApp---ReactNative" 
                         target="_blank" 
-                        className="text-sm md:text-lg text-[#f26f76] hover:text-white transition-colors duration-300 mr-4"
+                        className="text-xs sm:text-sm md:text-lg text-[#f26f76] hover:text-white transition-colors duration-300 mr-4 text-right"
                         style={{ fontFamily: 'var(--font-geist-mono)' }}>
-                        GitHub (mobile)
+                        GitHub(mobile)
                         <FontAwesomeIcon icon={faAnglesRight} className="ml-1 slide-animation" />
                     </Link>
                     {/* <Link 

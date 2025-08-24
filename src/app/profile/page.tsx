@@ -4,6 +4,7 @@ import { faDownload, faWifi } from "@fortawesome/free-solid-svg-icons";
 import { BatteryMedium } from "lucide-react";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import Image from "next/image";
 
 export default function ContactUs() {
   return (
@@ -27,10 +28,12 @@ export default function ContactUs() {
               </div>
               <div className="md:hidden flex flex-col items-center mb-5">
                 <div className="border-1 border-[#00f5d4] rounded-xl p-1 h-50 w-50">
-                  <img
+                  <Image
                     src="/Profile/Profile.jpg"
                     className="object-cover bg-white rounded-md aspect-square"
-                      />
+                    alt="Profile Picture"
+                    height={800} width={800}
+                  />
                 </div>
                 <a
                   href="/Profile/Himantha-CV.pdf"
@@ -51,10 +54,12 @@ export default function ContactUs() {
             </div>
             <div className="hidden md:block">
               <div className="border-1 border-[#00f5d4] rounded-xl p-1 h-50 w-50">
-                <img
+                <Image 
+                  height={1000} width={1000}
                   src="/Profile/Profile.jpg"
                   className="object-cover bg-white rounded-md aspect-square"
-                    />
+                  alt="Profile Picture"
+                />
               </div>
               <a
                 href="/Profile/Himantha-CV.pdf"
@@ -71,9 +76,11 @@ export default function ContactUs() {
           <h1 className="text-xl mt-5 mb-2" style={{ fontFamily: 'var(--font-geist-mono)' }}>Education</h1>
           <div className="flex gap-5 flex-col xl:flex-row" style={{ fontFamily: 'var(--font-geist-sans)' }}>
             <div className="border-1 border-[#00f5d4] rounded-xl p-3 flex-1 flex gap-5">
-              <img 
+              <Image 
+                height={200} width={200} 
                 src="/Profile/UCSC.png"
                 className="h-30 w-30 object-contain bg-white rounded-md"
+                alt="University Of Colombo School of Computing"
                 />
                 <div>
                   <h1 className="text-xl font-bold">University Of Colombo School of Computing</h1>
@@ -82,9 +89,11 @@ export default function ContactUs() {
                 </div>
             </div>
             <div className="border-1 border-[#00f5d4] rounded-xl p-3 flex-1 flex gap-5">
-              <img 
+              <Image 
+                height={200} width={200} 
                 src="/Profile/Maliyadeva.png"
                 className="h-30 w-30 object-contain bg-white p-1 rounded-md"
+                alt="Maliyadeva College"
                 />
                 <div>
                   <h1 className="text-xl font-bold">Maliyadeva College</h1>
@@ -107,27 +116,33 @@ export default function ContactUs() {
                   href="https://linkedin.com/in/himantha-marasinghe"
                   target="_blank"
                   >
-                    <img
+                    <Image 
+                      height={50} width={50}
                       src="/Social/LinkedIn.png"
                       className="h-10 w-10 object-contain bg-white p-1 rounded-md"
+                      alt="LinkedIn"
                     />
                   </Link>
                 <Link 
                   href="https://www.facebook.com/profile.php?id=100093540554863"
                   target="_blank"
                   >
-                    <img
+                    <Image 
+                      height={50} width={50}
                       src="/Social/Facebook.png"
                       className="h-10 w-10 object-contain bg-white p-1 rounded-md"
+                      alt="Facebook"
                     />
                   </Link>
                 <Link 
                   href="https://github.com/HimanthaMarasinghe"
                   target="_blank"
                   >
-                    <img
+                    <Image 
+                      height={50} width={50}
                       src="/Social/github.png"
                       className="h-10 w-10 object-contain bg-white p-1 rounded-md"
+                      alt="GitHub"
                     />
                   </Link>
               </div>
