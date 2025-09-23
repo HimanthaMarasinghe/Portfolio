@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ![](https://res.cloudinary.com/dtimdnbve/image/upload/w_30,h_30,dpr_auto/v1758619745/favicon_s6ob4z.png) My Personal Portfolio
 
-## Getting Started
+[![Website](https://img.shields.io/badge/Check_out_it_from_here_👉-himantha.me-blue?style=flat-square)](https://www.himantha.me)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 About  
+- This is my personal portfolio website designed to showcase my projects, skills, and experience in software engineering.  
+- It provides a clean, modern, and responsive interface so visitors can easily explore my work.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Features  
+- ✨ Modern, responsive design built with **Next.js** and **Tailwind CSS**  
+- 📂 Dedicated sections for skills, featured projects, and contact information  
+- 🌐 Custom domain [himantha.me](https://www.himantha.me)  
+- ⚡ Fast and reliable hosting on **Vercel**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack  
 
-To learn more about Next.js, take a look at the following resources:
+| Technology | Purpose |
+|------------|---------|
+| **Next.js** | Frontend framework (React-based) |
+| **Tailwind CSS** | Styling and responsive layout |
+| **Namecheap** | Domain registration |
+| **Vercel** | Hosting & deployment |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![My Skills](https://skillicons.dev/icons?i=nextjs,tailwind,vercel)
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🌐 Live Website  
+[**Visit himantha.me**](https://www.himantha.me)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
